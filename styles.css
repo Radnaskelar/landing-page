@@ -1,0 +1,63 @@
+body {
+    display:flex;
+    border:5px solid red;
+    flex-direction: column;
+    margin:0px;
+    padding:0 0px;
+}
+
+.header, .footer {
+  background-color: #1f2937;
+}
+
+.header {
+    display:flex;
+    border:5px solid purple;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.header h3 {
+    font-size: 24px;
+    color: #f9faf9;
+}
+
+.title {
+    display: flex;
+    border:5px solid green;
+    background-color: #1f2937;
+}
+
+.sub-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-title h2 {
+    font-size: 48px;
+    color: #f9faf9;
+}
+
+button {
+    width:90px;
+    padding:5px 20px;
+}
+
+ul {
+    display:flex;
+    border:1px solid blue;
+    padding:0px;
+    list-style-type: none;
+    align-items: center;
+    gap:10px;
+}
+
+a:any-link {
+    text-decoration: none;
+    color:#e5e7eb;
+    font-size: 18px;
+}
+
+a:hover {
+    background-color:rgb(168, 142, 142);
+}
