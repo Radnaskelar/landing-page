@@ -6,14 +6,19 @@ body {
     padding:0 0px;
 }
 
-.header, .footer {
+.container {
+    display:flex;
+    flex-direction: column;
+    flex:1;
+}
+
+.header, footer {
   background-color: #1f2937;
 }
 
 .header {
     display:flex;
-    border:5px solid purple;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
 }
 
@@ -24,9 +29,8 @@ body {
 
 .title {
     display: flex;
-    border:5px solid green;
     background-color: #1f2937;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .sub-title {
@@ -40,41 +44,85 @@ body {
 }
 
 .boxes {
-    border:5px solid cyan;
     display:flex;
     justify-content:center;
     gap:35px;
     flex-wrap: wrap;
+    margin-bottom:80px;
+    margin-top: 10px;
+    font-size: 18px;
 }
 
 .box {
     text-align: center;
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 200px;
 }
 
 .boxes img {
     border: 3px solid #3882f6;
     border-radius: 10px;
-    height:250px;
+    height:200px;
 }
 
 .low-txt {
     background-color: #e5e7eb;
     display: flex;
     flex-direction: column;
+    padding:100px 150px 50px 150px;
 }
 
 .p1 {
+    display:flex;
     font-size: 36px;
     font-style: italic;
     color:#1f2937;
-    border:2px solid;
+    padding: 10px 40px 10px 40px;
+    justify-content: center;
 }
 
 .p2 {
     text-align: end;
+    font-size: 22px;
+    margin-top:0px;
+}
+
+.bottom-txt {
+    display:flex;
+    margin:80px;
+    background-color: #3882f6;
+    color:#e5e7eb;
+    border-radius: 5px;
+    padding:40px;
+    justify-content: space-between;
+    align-items: center;
+    height:auto;
+    min-width:185px;
+}
+
+.sub-bottom-txt {
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.sub-bottom-txt p {
+    margin:5px;
+    font-size: 20px;
+}
+
+.bottom-txt button {
+    border:1px solid white;
+}
+
+footer {
+    text-align: center;
+    color: #f9faf9;
+    font-size: 24px;
+    display:flex;
+    justify-content: center;
+    padding: 20px;
 }
 
 button {
@@ -82,11 +130,11 @@ button {
     padding:5px 20px;
     background-color: #3882f6;
     color: #e5e7eb;
+    border-radius: 5px;
 }
 
 ul {
     display:flex;
-    border:1px solid blue;
     padding:0px;
     list-style-type: none;
     align-items: center;
